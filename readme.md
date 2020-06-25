@@ -6,7 +6,7 @@ This website was developed for 'The Noise Who Runs', a UK/FR rock band who relea
 
 👉 The site is live and running here: [https://thenoisewhoruns.com](https://thenoisewhoruns.com/)
 
-The site is integrated in Wordpress as the band members would like to regularly post content (mainly articles such as interviews and news about their current projects). Thus Wordpress was a convenient solution as the cms is not only quite flexible to use on the development side of things, but is also simple and straightforward for end users who just want to post content on the site.
+The site is integrated in Wordpress as the band members would like to regularly post content (mainly articles such as interviews and news about their current projects). Thus Wordpress was a convenient solution as the cms is not only quite flexible to use on the development side of things, but is also simple and straightforward for end users who just want to write articles.
 
 The modified theme of the site is uploaded in this repo.
 
