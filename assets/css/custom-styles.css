@@ -1,0 +1,830 @@
+@font-face {
+  font-family: 'Stencilia';
+  src: url("../css/fonts/STENCILIA-A_0.TTF");
+  /* IE9 Compat Modes */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.container, .container-fluid {
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+
+.home .wrapper {
+  padding: 0;
+}
+
+
+/*
+Header
+*/
+
+.nav_large  #menu-top-navigation-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nav_large {
+  padding-top: 0;
+}
+.nav_large .menu-item a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0.5rem;
+  font-size: 0.7rem;
+  padding-bottom: 5px;
+}
+
+/* menu for mobile */
+
+.menu-inside-wrapper > .main-navigation > div > div > .menu-top-navigation-menu-container >ul > .menu-item a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+#header__social {
+  margin-top: 2em;
+}
+
+#header__social a {
+  padding: 14px 0 !important;
+}
+
+.nav_large .menu-item a:hover {
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #800000;
+  /* color: #800000 */
+}
+
+.nav_large > .menu-top-navigation-menu-container > .primary-menu > #menu-item-408 {
+
+  /* remove privacy nav in top menu */
+  display: none;
+}
+
+/*
+
+Display posts on home page
+*/
+
+.display_post--title .archive-post-wrap .entry-title {
+  padding-bottom: 1em !important;
+}
+
+/* .display_posts--scrollbar::-webkit-scrollbar {
+background-color: #fff;
+}
+
+.display_posts--scrollbar::-webkit-scrollbar-thumb {
+background-color: red;
+max-height: 5px;
+} */
+
+.display_posts--scrollbar::-webkit-scrollbar
+{
+  width: 12px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+.display_posts--scrollbar::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.display_posts--scrollbar::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.display_posts {
+  padding-bottom: 2em;
+}
+
+.display_post--card  {
+  /* padding: 0;
+  margin: 4px; */
+}
+
+.display_post--img {
+  min-height: 245px;
+  background-color: black;
+}
+
+.attachment-thumbnail .size-thumbnail .wp-post-image:hover {
+  opacity: 0.4;
+  /* transition: opacity 0.2s; */
+}
+
+.post .entry-content h2 {
+  font-weight: lighter;
+}
+
+.display_post--text {
+  background-color: lightgrey;
+  padding: 2em 1em;
+}
+
+.display_post--clamp > p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+
+  margin-top: 1em;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+.display_post--clamp > a:first-child {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  color: #484848;
+  min-height: 66px;
+}
+
+.display_post--clamp > a:last-child {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.4;
+  font-size: 0.8em;
+  text-transform: uppercase;
+
+  padding: 0.8em;
+  color: #fff;
+  background-color: #333333;
+  height: 100%;
+
+}
+
+.display_post--clamp > a:last-child:hover  {
+  text-decoration: none;
+  background-color: #484848;
+
+}
+
+
+
+/* ------------ title fonts ------------------------------------  */
+
+.about__title--text, .backcatalogues__title--text  {
+  margin-bottom: 3.5em;
+  text-transform: uppercase;
+  font-family: 'Stencilia';
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.about__title--text, .backcatalogues__title--text  {
+  margin-bottom: 3.5em;
+}
+
+
+
+
+
+/* ------------ parralax effects ------------------------------------  */
+
+.parallax--stencil {
+  /* The image used */
+  background-image: url("../images/stencil/still-nofuture.jpg");
+
+  /* Set a specific height */
+  height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax--socialmedia {
+  /* The image used */
+  background-image: url("../images/stencil/still-socialmedia.jpg");
+
+  /* Set a specific height */
+  height: 1000px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ------------ about us ------------------------------------  */
+
+
+.about__description--text {
+  line-height: 2em;
+  color: rgba(49, 49, 49, 0.8);
+}
+
+.about__image {
+  margin: 3em auto 5em ;
+}
+
+/* ------------ promo ep ------------------------------------  */
+
+
+
+
+#signup-ep {
+  background: #E7DECD;
+  padding: 3em;
+}
+
+.signup__image {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+/* .signup__description__text_area--title {
+text-align: left;
+padding: 0;
+} */
+
+
+
+.stream_area {
+  /* margin-top: 2em; */
+  /* margin-bottom: 5em; */
+}
+
+/* #streaming .stream_area--title-big {
+margin-bottom: 1em;
+font-size: 4em;
+text-transform: uppercase;
+text-align: center;
+} */
+
+.stream_area--title {
+  text-align: center;
+  font-weight: lighter;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: white;
+}
+
+.signup-ep__title--text  {
+  margin-bottom: 4.5em;
+  font-size: 60px;
+  /* margin-bottom: 3.5em; */
+  text-transform: lowercase;
+  font-family: 'Stencilia';
+  letter-spacing: 3px;
+  text-align: center;
+
+  color: white;
+  text-shadow: 0px 1px 8px #28110B;
+}
+.signup-ep--logos-area {
+  background-color: rgba(0, 0, 0, 1);
+  padding: 1em;
+}
+
+.signup-ep--logos {
+  margin-top: 1em;
+}
+
+.signup-ep--logo {
+  padding: 0.5em 1em;
+}
+
+.stream_area__bottom {
+  /* background-color: rgba(255, 155, 155, 0.6);
+  position: relative;
+  bottom: 250px;
+  padding-bottom: 50px; */
+
+  position: relative;
+  bottom: 400px;
+}
+
+
+.signup-ep--logo:hover {
+  background-color: rgba(246, 246, 246, 0.2);
+  padding: auto 10px;
+}
+
+.mc-embedded-subscribe {
+  margin-left: auto;
+}
+
+.signup__description__text_area--text {
+  font-weight: bold;
+  font-size: 0.9em;
+  letter-spacing: 1.5px;
+  color: grey;
+}
+
+
+
+/* ------------ side projects ------------------------------------  */
+
+.backcatalogues__title--text {
+  text-align: center;
+}
+.backcatalogues__gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.backcatalogue {
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.backcatalogue img {
+  max-width: 100%;
+}
+
+.backcatalogue--link {
+  color: rgba(79, 79, 79, 0.5);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.backcatalogue__overlay {
+  padding: 5px 15px;
+  position: relative;
+  z-index: 55;
+  background-color: #fff;
+  margin: 0;
+}
+
+.backcatalogue__overlay p {
+  margin: 0 auto;
+  color: rgba(79, 79, 79, 0.5);
+  font-size: smaller;
+  text-transform: lowercase;
+  letter-spacing: 3px;
+  font-weight: 300;
+  line-height: 1.6em;
+  text-align: center;
+
+
+}
+
+.backcatalogue img:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: transform 2s ease-in-out;
+
+  z-index: -5;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+/* ------------------ foooter ------------------ */
+.footer {
+  /* padding: 1.2rem 2rem;
+  position: fixed;
+  bottom: 5%; */
+  margin-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-width: 100%;
+}
+
+.footer__title {
+  font-size: 1.5rem;
+  font-family: 'Stencilia';
+  letter-spacing: 6px;
+}
+
+.footer__title:hover {
+  color: #800000;
+  text-decoration: none !important;
+}
+
+.footer__link--brand {
+  color: black;
+  text-decoration: none;
+  width: 0;
+}
+
+.footer__link--brand:hover {
+  color: #800000;
+  /* transition: color 1s; */
+  text-decoration: none !important;
+
+}
+
+.footer__link--brand-area {
+  position: fixed;
+  left: 2em;
+  bottom: 10%;
+  width: 150px;
+  z-index: 99;
+}
+
+.footer__title {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__social {
+  padding: 0;
+  margin: 0;
+
+  position: fixed;
+  bottom: 10%;
+  width: 200px;
+  right: 2em;
+}
+
+.footer__link--icon {
+  width: 15px;
+  margin: 0 5px;
+  color: black;
+}
+
+.footer__link--icon:hover {
+  color: #800000;  /* transition: color 1s; */
+}
+
+.footer__nav--link:hover {
+  text-decoration: none;
+}
+
+.footer__link--brand {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#cookie-law-info-again {
+  display: hidden !important;
+  color: red;
+}
+
+/*--------------------------------------------------------------
+## Custom Page : Lyrics
+--------------------------------------------------------------*/
+
+body[class*="page-template-page-lyrics"]  {
+  /* background: green !important; */
+  margin: 0;
+  background-image: url('http://localhost/Projects/TNWR-wordpress/wp-content/themes/simple-persona/assets/images/brickwallpattern.png') !important;
+  /* background-size: cover; */
+  background-repeat: repeat;
+}
+
+.page-template-page-lyrics {
+  text-align: center;
+}
+
+.lyrics__title {
+  text-align: center;
+  text-transform: lowercase;
+  margin: 2em 0 1em;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}
+
+.lyrics__category, .lyrics__year {
+  margin-bottom: 1em;
+  font-size: 0.8em;
+  letter-spacing: 5px;
+}
+
+/* .lyrics__category {
+padding-top:
+} */
+
+.lyrics__year {
+  padding-bottom: 5em;
+}
+
+.lyrics__text--firstchild {
+  margin-top: 3em;
+}
+
+.lyrics__text {
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+.lyrics__text--title {
+  font-weight: bold;
+}
+
+.lyrics__intro {
+  font-size: 12px;
+
+}
+
+.page-template-page-lyrics p {
+  text-align: center;
+  color: #797979;
+  /* text-transform: uppercase; */
+}
+
+/* .lyrics__iframe, .page-template-page-lyrics  .fluid-width-video-wrapper {
+margin-bottom: 5em;
+} */
+
+/*--------------------------------------------------------------
+## Custom Page : Page with all blog posts
+--------------------------------------------------------------*/
+
+
+.blog .entry-title {
+  font-weight: lighter;
+}
+
+.blog .entry-content p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+/*--------------------------------------------------------------
+## Custom Page : Blog page single
+--------------------------------------------------------------*/
+
+.interview_text--title {
+  font-weight: lighter !important;
+  margin-bottom: 2.5em  !important;
+}
+
+.interview_text--questions {
+  font-weight: lighter  !important;
+  font-size: 1.5em  !important;
+  margin-top: 2.5em  !important;
+  color: #0A122A  !important;
+}
+
+.interview_text--answers {
+  font-size: 0.9em  !important;
+  color: #627C85  !important;
+  line-height: 2em  !important;
+}
+
+.photo_caption--text {
+  font-size: 12px !important;
+    color: #a5a5a5 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    letter-spacing: 2px !important;
+    text-align: center !important;
+    font-weight: bold;
+}
+
+.postid-284 img {
+  margin: 5em auto;
+}
+
+.content-area {
+  margin-top: 5em !important;
+}
+
+/* .interview--image, .wp-image-312 {
+max-height: 700px;
+} */
+
+/* .site-branding {
+display: none;
+} */
+
+/*--------------------------------------------------------------
+## Media Queries
+--------------------------------------------------------------*/
+
+@media screen and (max-width: 666px) {
+
+  .nav_large {
+    display: none;
+  }
+
+#footer > .footer__social {
+    display: none !important;
+    z-index: -9999  !important;
+  }
+
+  .container, .container-fluid {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .parallax--stencil {
+
+    /* Set a specific height */
+    height: 600px;
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .parallax--socialmedia {
+    /* The image used */
+    background-image: url("../images/stencil/still-socialmedia.jpg");
+
+    /* Set a specific height */
+    height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .signup__description {
+    text-align: center;
+    margin-top: 3em;
+  }
+
+  .signup-ep__title--text {
+    font-size: 1.8em
+  }
+
+  .signup-ep--logos-area {
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+  }
+
+  .signup-ep--logos {
+    padding-top: 1em;
+  }
+
+  .stream_area--title {
+    margin-bottom: 1em;
+  }
+
+  /* .stream_area--title-big {
+  margin-bottom: 0.5em;
+  font-size: 2em;
+  } */
+
+  .signup-ep--logo {
+    margin: 0;
+    padding: 0.5em 1em;
+
+    /* padding: 0 20px; */
+    min-width: 30%;
+    min-height: 80px;
+  }
+
+
+  .signup-ep__title--text {
+    bottom: 100px;
+  }
+
+  /* pages with all blog posts */
+  .blog_articles--flex-sm {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .display_post--img {
+    min-height: 222px;
+    background-color: black;
+  }
+
+  .footer__social {
+    /* display: none !important; */
+  }
+
+  /* -------- Custom Page : Blog page single -------- */
+
+  .interview_text--title {
+    font-size: 1.2em !important;
+    /* letter-spacing: 3px !important; */
+    /* text-transform: uppercase !important; */
+    font-weight: lighter !important;
+    font-style: italic  !important;
+  }
+
+  .interview_text--questions {
+    font-size: 1em  !important;
+    font-weight: bold   !important;
+    color: #484848   !important;
+  }
+
+  .single-post h2 {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 959px) {
+
+  .stream_area--title {
+    margin-bottom: 1em;
+  }
+
+  .signup-ep--logos-area {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+
+  .signup-ep--logo img {
+    width: 90%;
+  }
+
+  .signup-ep--logo  {
+    width: 20%;
+    padding: 10px auto;
+
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+  .parallax--socialmedia {
+    /* The image used */
+    background-image: url("../images/stencil/still-socialmedia.jpg");
+
+    /* Set a specific height */
+    height: 600px;
+
+    /* Create the parallax scrolling effect */
+    /* background-attachment: local; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 958px) {
+  /* .menu-wrapper {
+  display: none;
+  } */
+  .site-branding {
+    /* hide brandng title on mobile */
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 959px) {
+
+  .menu-wrapper {
+    /* hide mobile menu */
+    display: none;
+  }
+
+  .site-title, .nav_large  {
+    padding-top: 20px;
+  }
+
+
+  .nav_large  {
+    display: flex;
+  }
+  .footer__link--brand {
+    display: none;
+  }
+
+  .footer__social {
+    padding-right: 50px;
+  }
+}
